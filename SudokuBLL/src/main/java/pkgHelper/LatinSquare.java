@@ -1,6 +1,6 @@
 // solutionasdfas
 package pkgHelper;
-
+//why
 import java.util.Arrays;
 
 public class LatinSquare {
