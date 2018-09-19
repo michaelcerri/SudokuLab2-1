@@ -3,7 +3,7 @@ package pkgHelper;
 import java.util.Arrays;
 
 public class LatinSquare {
-
+	
 	/**
 	 * LatinSquare - two dimensional array that's the core of the puzzle
 	 * 
@@ -70,10 +70,9 @@ public class LatinSquare {
 	 */
 	public boolean hasDuplicates(int[] arr) {
 
-		// TODO: Return 'true' if any element in arr is duplicate
 
 		boolean hasDuplicates = false;
-		int[] sortedArray = Arrays.copyOf(arr, arr.length);
+		int[] sortedArray = Arrays.copyOf(arr, arr.length); // used to copy the elements of an array
 		Arrays.sort(sortedArray);
 
 		for (int i = 0; i < sortedArray.length - 1; i++) {
