@@ -1,0 +1,12 @@
+	protected boolean isPartialSudoku() {
+		//PROBLEM HERE WITH ZEROS
+		if (super.isLatinSquare()!=true || super.ContainsZero()!=true) //checks that it is a latin square and has zeros
+			return false;
+			
+		//PROBLEM HERE WITH ZEROS
+		for (int i=0; i<iSize;i++) {	//checks that each element in the first row is in each region and each region doesn't have duplicates
+				if(!super.hasAllValues(super.getRow(0),getRegion(i))||super.hasDuplicates(getRegion(i))==true)
+					return false;
+			}	
+		return true;
+	}
